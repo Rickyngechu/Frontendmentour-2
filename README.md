@@ -37,7 +37,7 @@ The following screenshots shows both the mobile and desktop version of the proje
 ### Links
 
 - Solution URL: [Source code](https://github.com/Rickyngechu/Frontendmentour-2)
-- Live Site URL: [Netlify live web](https://your-live-site-url.com)
+- Live Site URL: [Netlify live web](https://frontend-mentour.netlify.app/)
 
 ## My process
 
