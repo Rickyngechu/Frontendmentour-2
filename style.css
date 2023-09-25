@@ -1,0 +1,192 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+:root {
+  --fontsize-paragraph: 1.1rem;
+
+  ---primary-orange: hsl(25, 97%, 53%);
+
+  --color-White: hsl(0, 0%, 100%);
+  --color-Light-Grey: hsl(217, 12%, 63%);
+  --color-Medium-Grey: hsl(216, 12%, 54%);
+  --color-Dark-Blue: hsl(213, 19%, 18%);
+  --color-verydark-blue: hsl(216, 12%, 8%);
+}
+
+.container {
+  width: 114rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Styling the rating section card*/
+.rate {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+.rating-section {
+  height: 100vh;
+  background-color: var(--color-verydark-blue);
+}
+.flex-cont {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating-cont {
+  padding: 1rem;
+  max-width: 40rem;
+  width: 45%;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(213, 20%, 18%),
+    hsla(213, 20%, 18%, 0.452)
+  );
+  border-radius: 0.8rem;
+}
+.rating-cont > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.star-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-verydark-blue);
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+}
+.card-heading {
+  color: var(--color-White);
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.card-text {
+  display: inline-block;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: var(--fontsize-paragraph);
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--color-Light-Grey);
+}
+.form {
+  /* background-color: orange; */
+}
+.input-btns {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-check {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: var(--color-Medium-Grey);
+  background-color: var(--color-verydark-blue);
+  transition: all 0.2s;
+}
+
+.selectbtn {
+  background-color: var(---primary-orange);
+  color: var(--color-White);
+}
+.submit-btn {
+  margin-inline: auto;
+  margin-top: 1.2rem;
+  display: block;
+  width: 80%;
+  padding: 0.6rem 1rem;
+  border-radius: 100rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--color-White);
+  outline: none;
+  border: none;
+  background-color: var(---primary-orange);
+  transition: all 0.2s ease;
+}
+
+/* Styling the thankyou display */
+.thankyou-display {
+  text-align: center;
+}
+.thankyou-display > *:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+.rate-display {
+  display: inline-block;
+  background-color: var(--color-verydark-blue);
+  color: var(---primary-orange);
+  border-radius: 100rem;
+  padding: 0.2rem 1.2rem;
+  font-size: 1rem;
+}
+.rate-input {
+  /* font-style: italic; */
+}
+
+/* Styling the section attribution */
+.attribution {
+  position: relative;
+  background-color: var(--color-verydark-blue);
+}
+.att-cont {
+  text-align: center;
+  padding-block: 1rem;
+  color: #fff;
+}
+.port-link {
+  color: var(---primary-orange);
+}
+.front-link {
+  color: var(--color-White);
+}
+
+@media screen and (max-width: 900px) {
+  .rating-cont {
+    padding: 1rem;
+    max-width: 50rem;
+    width: 90%;
+  }
+
+  .card-text {
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: var(--fontsize-paragraph);
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-check:hover {
+    cursor: pointer;
+    background-color: var(--color-Medium-Grey);
+    color: var(--color-White);
+  }
+  .submit-btn:hover {
+    cursor: pointer;
+    background-color: var(--color-White);
+    color: var(---primary-orange);
+  }
+}
